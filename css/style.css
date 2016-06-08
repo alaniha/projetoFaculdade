@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Genericons';
+    src: url('font/genericons-regular-webfont.eot');
+    src: url('font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/genericons-regular-webfont.woff') format('woff'),
+         url('font/genericons-regular-webfont.ttf') format('truetype'),
+         url('font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*PADRAO*/
+h1, h2, h3 {
+  color: #066a9c;
+}
+
+/*BOOTSTRAP*/
+.navbar-default {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #eb681b;
+  color: #066a9c;
+}
+
+.logo {
+  height: 35px;
+  width: auto;
+}
+
+.navbar-default {
+  opacity: 0.8;
+}
+
+
+/*NOVOS*/
+.fundo {
+  background-color: #f0f0f0;
+}
+
+.dfundo {
+  background: url('img/dfundo.png');
+}
+
+.title {
+  border-right: solid 15px #eb681b;
+}
+
+.secao {
+    margin-top: -50px;
+    padding: 50px ;
+}
+
+.margem {
+    padding: 20px 0;
+}
+
+.link-image {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 150px;
+}
