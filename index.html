@@ -16,7 +16,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/html5lightbox.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -40,8 +40,8 @@
                     <li>
                         <a href="#nossasAcoes">Nossas Ações</a>
                     </li>
-                    <li class="active">
-                        <a href="#doacoes">Doações</a>
+                    <li>
+                        <a href="#doacoes" class="doacoes-menu">Doações</a>
                     </li>
                     <li>
                         <a href="#blog">Blog</a>
@@ -50,57 +50,61 @@
             </div>
         </div>
     </nav>
-        <div style="width: 100%; position: absolute;">
-          <img class="img-responsive filtro" src="img/grupo.jpg" alt="Ação Cosplay Destaque" style="width: 100%;"/>
+    <div class="destaque-principal">
+        <div class="container">
+            <h1>Solidariedade</h1><h2>Vista essa fantasia</h2>
+        </div>
+    </div>
+        <!--<div style="width: 100%; position: absolute;">
+          <img class="img-responsive filtro" src="img/grupo.jpg" alt="Ação Cosplay Destaque" style="width: 100%; height: 759px;"/>
          </div>
          <div style="width: 100%; position: relative;">
           <img class="img-responsive filtro" src="img/filtro.png" alt="Ação Cosplay Destaque" style="width: 100%; height: 759px; opacity: 0.6;"/>
         </div>
-        <div class="destaque"><h1>Solidariedade</h1><h2>Vista essa fantasia</h2></div>
-      <div class="row">
-        <div id="sobreNos" class="col-lg-12 secao">
-            <div class="container">
-          <h1>Sobre Nós &nbsp;<span class="title"></span></h1>
-          <div class="col-lg-4">
-            <h3>Como surgimos?</h3>
-            <p>O Ação Cosplay surgiu de um pensamento muito claro: Pesssoas gastam muito dinheiro para confeccionar fantasias de personagens para concorrer em disputas.</p>
-            <p>Depois dos concursos, essas fantasias acabam de lado esquecidas em algum armário. Sendo assim, por que não dar um bom uso à essas peças?</p>
-            <p>Decidimos, então, criar um grupo que usaria essas fantasias para arrecadar doações, fazer eventos beneficentes e alegrar crianças por toda parte de forma lúdica e alegre.</p>
-          </div>
-          <div class="col-lg-8">
-            <h3>Como atuamos?</h3>
-            <p>Nos reunimos para alegrar as crianças, então onde houver uma criança em situação precária, amargurada ou sem alegria, nós estaremos lá.</p>
-            <p>Ao longo do ano realizamos diversas campanhas: Páscoa, Dia das Crianças, Natal... dentre outras.  Arrecadamos todo tipo de doações ( voluntários, dinheiro, roupas, fantasias, brinquedos, doces...) e planejamos as festas de acordo com cada evento e sua temática.</p>
-            <p>Fora dessas datas, nós também realizamos visitas em creches, escolas, hospitais, doamos sangue e realizamos campanhas de concientização (contra o aedes aegypt, escovar os dentes, anti bullyng, anti drogas....)</p>
-            <p>Acreditamos que quando a criança vê o seu herói ou personagem favorito realizando essas ações ela espelha esse comportamento para o seu cotidiano e para seus amigos numa onda sem fim de bondade, moral e bons costumes tornando-os cidadãos e incluindo-os na sociedade de forma positiva e atuante.</p>
-            <p>Nesta página, você poderá ver alguns vídeos de nossas campanhas e fotos dos eventos que já realizamos por toda a cidade, levando alegria e fantasia para o mundo dessas crianças.</p>
-          </div>
-            </div>
+        <div class="destaque"><h1>Solidariedade</h1><h2>Vista essa fantasia</h2></div>-->
+        <div class="container">  
+            <div class="row">
+                <div id="sobreNos" class="col-lg-12 secao">
+
+                    <h1 class="title">Sobre Nós</h1>
+                    <div class="col-lg-4 col-md-4">
+                        <h3>Como surgimos?</h3>
+                        <p>O Ação Cosplay surgiu de um pensamento muito claro: Pesssoas gastam muito dinheiro para confeccionar fantasias de personagens para concorrer em disputas.</p>
+                        <p>Depois dos concursos, essas fantasias acabam de lado esquecidas em algum armário. Sendo assim, por que não dar um bom uso à essas peças?</p>
+                        <p>Decidimos, então, criar um grupo que usaria essas fantasias para arrecadar doações, fazer eventos beneficentes e alegrar crianças por toda parte de forma lúdica e alegre.</p>
+                    </div>
+                    <div class="col-lg-8 col-md-8">
+                        <h3>Como atuamos?</h3>
+                        <p>Nos reunimos para alegrar as crianças, então onde houver uma criança em situação precária, amargurada ou sem alegria, nós estaremos lá.</p>
+                        <p>Ao longo do ano realizamos diversas campanhas: Páscoa, Dia das Crianças, Natal... dentre outras.  Arrecadamos todo tipo de doações ( voluntários, dinheiro, roupas, fantasias, brinquedos, doces...) e planejamos as festas de acordo com cada evento e sua temática.</p>
+                        <p>Fora dessas datas, nós também realizamos visitas em creches, escolas, hospitais, doamos sangue e realizamos campanhas de concientização (contra o aedes aegypt, escovar os dentes, anti bullyng, anti drogas....)</p>
+                        <p>Acreditamos que quando a criança vê o seu herói ou personagem favorito realizando essas ações ela espelha esse comportamento para o seu cotidiano e para seus amigos numa onda sem fim de bondade, moral e bons costumes tornando-os cidadãos e incluindo-os na sociedade de forma positiva e atuante.</p>
+                        <p>Nesta página, você poderá ver alguns vídeos de nossas campanhas e fotos dos eventos que já realizamos por toda a cidade, levando alegria e fantasia para o mundo dessas crianças.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="fundo">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="col-lg-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="col-lg-4 col-md-4">
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
                             <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                <img src="img/princesa-1.jpg" alt="...">
-                                </div>
-                                <div class="item">
-                                <img src="img/princesa-2.jpg" alt="...">
-                                </div>
-                                <div class="item">
-                                <img src="img/princesa-3.jpg" alt="...">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="img/princesa-1.jpg" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/princesa-2.jpg" alt="...">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/princesa-3.jpg" alt="...">
+                                    </div>
                                 </div>
                             </div>
-
-                            </div>
-                            </div>
-                            <div class="col-lg-8">
+                        </div>
+                        <div class="col-lg-8 col-md-8">
                             <h3>Nossa Missão: Princesa Sofia</h3>
                             <p>Para contar a nossa história, é preciso contar sobre a nossa queria Princesa Sofia.</p>
                             <p>Sofia foi uma menina muito alegre e divertida. Ela era a luz da nossa vida e como todas as crianças, ela foi um anjo que nos foi dado de presente para um próposito maior do que nossa compreensão poderia prever.</p>
@@ -109,170 +113,178 @@
                             <p>Quando ela partiu, Seu pai quis honra-la e deu continuidade à um projeto antigo e tímido que logo tomou forma e cresceu... o Ação Cosplay.</p>
                             <p>Hoje, O Ação Cosplay se tornou a nossa meta, e o que fazemos nos traz alegria pois nos lembramos dela com carinho e das lições que ela nos passou em vida.</p>
                             <p>Nosso anjo agora repousa numa estrelinha linda lá no céu e nos guia para cuidar e amar outras crianças tornando-as felizes. Ela é o nosso motivo de existir. Essa é nossa missão.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="nossasAcoes" class="col-lg-12 secao">
+
+                    <h1 class="title">Nossas Ações</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="https://www.youtube.com/embed/fGDVmh4UI88" class="html5lightbox link-image" data-group="mygroup" data-width="480" data-height="320" title="Vídeo Campanha de Doação de Sangue" style="background-image: url(https://i.ytimg.com/vi_webp/fGDVmh4UI88/maxresdefault.webp);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                       	    <a href="img/gallery/IMG1.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG1.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG2.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG2.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG3.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG3.jpg);"></a>
+                   	    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG4.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG4.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG5.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG5.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG6.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG6.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG7.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG7.jpg);"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG8.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG8.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG9.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG9.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG10.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG10.jpg);"></a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 foto">
+                            <a href="img/gallery/IMG11.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG11.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dfundo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 agenda">
+                        <h3>Agenda</h3>
+                        <p>Aqui você se mantém atualizado sobre o nosso calendário de eventos e ações. Clicando no evento sinalizado você pode ver os detalhes de como e onde será realizado.</p>
+                        <p>Traga a sua família e divirta-se assistindo, tirando fotos ou ajudando como nosso voluntário! Se puder, traga a sua doação.</p>
+                        <p>Aceitamos fantasias, brinquedos, comida, livros, dinheiro, roupas e voluntários.</p>
+                        <p>Faça parte desta corrente do bem!</p>
+                        <p>Junte-se ao Ação Cosplay!</p>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Zika Zero</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Sábado, <strong>9 de Abril</strong> - Dia Inteiro<br><strong>Praça da Cruz Vermelha</strong></p>
+                                        <p>Todos juntos na Praça da Cruz Vermelha para combatar o mosquito! Venha assitir a luta dos super heróis contra o malvado mosquito aedes aegypt! Traga as crianças para a batalha mais épica do ano!</p>
+                                        <p><strong>Doações sugeridas:</strong> ação voluntária, doces, brinquedos, livros, dinheiro</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Zika Zero</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <p>Sábado, <strong>9 de Abril</strong> - Dia Inteiro<br><strong>Praça da Cruz Vermelha</strong></p>
+                                        <p>Todos juntos na Praça da Cruz Vermelha para combatar o mosquito! Venha assitir a luta dos super heróis contra o malvado mosquito aedes aegypt! Traga as crianças para a batalha mais épica do ano!</p>
+                                        <p><strong>Doações sugeridas:</strong> ação voluntária, doces, brinquedos, livros, dinheiro</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-      <div class="row">
-        <div id="nossasAcoes" class="col-lg-12 secao">
-          <div class="container">
-            <h1>Nossas Ações &nbsp;<span class="title"></span></h1>
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <a href="https://www.youtube.com/embed/fGDVmh4UI88" class="html5lightbox link-image" data-group="mygroup" data-width="480" data-height="320" title="Big Buck Bunny" style="background-image: url(https://i.ytimg.com/vi_webp/fGDVmh4UI88/maxresdefault.webp);">
-                    <!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fGDVmh4UI88" frameborder="0" allowfullscreen></iframe>-->
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG1.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG1.jpg);">
-                  <!--<img src="img/gallery/IMG1.jpg" width="262px" height="auto" alt="...">-->
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG2.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG2.jpg);">
-                  <!--<img src="img/gallery/IMG2.jpg" width="262px" height="auto" alt="...">-->
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG3.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG3.jpg);">
-                </a>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG4.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG4.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG5.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG5.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG6.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG6.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG7.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG7.jpg);">
-                </a>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG8.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG8.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG9.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG9.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG10.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG10.jpg);">
-                </a>
-              </div>
-              <div class="col-lg-3">
-                <a href="img/gallery/IMG11.jpg" class="html5lightbox link-image" data-group="mygroup" title="Toronto" style="background-image: url(img/gallery/IMG11.jpg);">
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="dfundo">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="col-lg-5 agenda">
-                <h3>Agenda</h3>
-                <p>Aqui você se mantém atualizado sobre o nosso calendário de eventos e ações. Clicando no evento sinalizado você pode ver os detalhes de como e onde será realizado.</p>
-                <p>Traga a sua família e divirta-se assistindo, tirando fotos ou ajudando como nosso voluntário! Se puder, traga a sua doação.</p>
-                <p>Aceitamos fantasias, brinquedos, comida, livros, dinheiro, roupas e voluntários.</p>
-                <p>Faça parte desta corrente do bem!</p>
-                <p>Junte-se ao Ação Cosplay!</p>
-              </div>
-              <div class="col-lg-7">
-                <div class="anota">
-                  <h3>Zika Zero</h3>
-                  <p>Sábado, <strong>9 de Abril</strong> - Dia Inteiro<br><strong>Praça da Cruz Vermelha</strong></p>
-                  <p>Todos juntos na Praça da Cruz Vermelha para combatar o mosquito! Venha assitir a luta dos super heróis contra o malvado mosquito aedes aegypt! Traga as crianças para a batalha mais épica do ano!</p>
-                    <p><strong>Doações sugeridas:</strong> ação voluntária, doces, brinquedos, livros, dinheiro</p>
-                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="doacoes" class="col-lg-12 secao">
-          <div class="container">
-            <h1>Doações &nbsp;<span class="title"></span></h1>
             <div class="row">
-              <div class="col-lg-9">
-                <h3>Contribuição</h3>
-                <p>Recebemos doações em todo o Rio de Janeiro. Para doar objetos entre em contato com o telefone <strong>21 9 7441-5610</strong> ou, se prefrir, faça uma doação de qualquer valor utilizando os dados abaixo:</p>
-                <p><strong> Banco Itaú<br>Agência 6893<br>Conta corrente 05978-9<br>Favorecido : Robert Fagner Braga de Oliveira</strong></p>
-              </div>
-              <div class="col-lg-3">
-                <img src="img/doeicone.png" alt="Ícone de Doação" style="width: 80%"/>
-              </div>
+                <div id="doacoes" class="col-lg-12 secao">
+                    <h1 class="title">Doações</h1>
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9">
+                            <h3>Contribuição</h3>
+                            <p>Recebemos doações em todo o Rio de Janeiro. Para doar objetos entre em contato com o telefone <strong>21 9 7441-5610</strong> ou, se prefrir, faça uma doação de qualquer valor utilizando os dados abaixo:</p>
+                            <p><strong> Banco Itaú<br>Agência 6893<br>Conta corrente 05978-9<br>Favorecido : Robert Fagner Braga de Oliveira</strong></p>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <img src="img/doeicone.png" alt="Ícone de Doação" style="width: 80%"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="blog" class="col-lg-12 secao">
-          <div class="container">
-            <h1>Blog &nbsp;<span class="title"></span>&nbsp;<span style="font-size: 10px; font-family: robotolight"><a href="blog.html">Mais notícias</a></span></h1>
+        <div class="container">
             <div class="row">
-              <div class="col-lg-4">
-                <img class="img-responsive" src="img/blog1.jpg" alt="Primeira matéria" style="width: 500px; height: 300px; overflow: hidden;" />
-                <div class="bdestaque"><p>09/04/2016</p><h4>Zika Zero</h4></div>
-              </div>
-              <div class="col-lg-4">
-                <img class="img-responsive" src="img/blog2.jpg" alt="Primeira matéria" style="width: 500px; height: 300px; overflow: hidden;"/>
-                <div class="bdestaque"><p>01/04/2016</p><h4>Visita ao hospital</h4></div>
-              </div>
-              <div class="col-lg-4">
-                <img class="img-responsive" src="img/blog2.jpg" alt="Primeira matéria" style="width: 500px; height: 300px; overflow: hidden;"/>
-              </div>
+                <div id="blog" class="col-lg-12 secao">
+                    <h1 class="title">Blog</h1> <span style="font-size: 10px; font-family: robotolight"><a href="blog.html">Mais notícias</a></span>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="postagem" style="background-image: url(img/blog1.jpg);">
+                                <div class="bdestaque"><p>09/04/2016</p><h4>Zika Zero</h4></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="postagem" style="background-image: url(img/blog2.jpg);">
+                                <div class="bdestaque"><p>01/04/2016</p><h4>Visita ao hospital</h4></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="postagem" style="background-image: url(img/blog2.jpg);">
+                                <div class="bdestaque"><p>01/04/2016</p><h4>Visita ao hospital</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <br>
       <footer>
         <div class="rodape">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                   <h3>Contatos</h3>
                   <div class="row">
-                    <div class="col-lg-6 contato">
+                    <div class="col-lg-6 col-md-6 contato">
                       <p><span class="genericon genericon-tablet"></span><a href="callto:21974415610">21 9 7441-5610</a><br>Robert - Organizador</p>
                       <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:ongacaocosplay@gmail.com">ongacaocosplay@gmail.com</a></p>
                     </div>
-                    <div class="col-lg-6 social">
+                    <div class="col-lg-6 col-md-6 social">
                       <p><span alt="Ícone do Facebook" class="genericon genericon-facebook-alt"></span>&nbsp;<a href="#">/AcaoCosplayOficial</a></p>
                       <p><span alt="Ícone do Twitter" class="genericon genericon-twitter"></span>&nbsp;<a href="#">@aCosplayOficial</a></p>
                       <p><span alt="Ícone do Instagram" class="genericon genericon-instagram"></span>&nbsp;<a href="#">@aCosplayOficial</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 newsletter">
+                <div class="col-lg-6 col-md-6 newsletter">
                   <h3>Newsletter</h3>
                   <p>Faça parte da nossa lista de emails e nunca perca uma atualização!</p>
                   <form>
                     <div class="row">
-                      <div class="col-lg-9">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <div class="col-lg-3">
-                        <button type="submit" class="btn btn-primary">Assine Já</button>
+                      <div class="col-lg-10 col-md-10">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="batman@ligadajustica.com">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Assinar</button>
+                        </span>
+                        </div>
                       </div>
                     </div>
                   </form>
@@ -282,9 +294,9 @@
           </div>
         </div>
         <div class="col-lg-12 info">
-         <p>Copyright © 2016  Ação Cosplay  |  Tema desenvolvido por Alana Carvalho.</p>
+         Copyright © 2016  Ação Cosplay  |  Tema desenvolvido por Alana Carvalho.
         </div>
-        
+
       </div>
       </footer>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->

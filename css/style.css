@@ -63,12 +63,12 @@
 }
 
 @font-face {
-    font-family: 'Genericons';
-    src: url('../fonts/glyphicons/genericons-regular-webfont.eot');
-    src: url('../fonts/glyphicons/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/glyphicons/genericons-regular-webfont.woff') format('woff'),
-         url('../fonts/glyphicons/genericons-regular-webfont.ttf') format('truetype'),
-         url('../fonts/glyphicons/genericons-regular-webfont.svg#genericonsregular') format('svg');
+    font-family: 'Glyphicons';
+    src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot');
+    src: url('../fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/glyphicons/glyphicons-halflings-regular.woff') format('woff'),
+         url('../fonts/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('../fonts/glyphicons/glyphicons-halflings-regular.svg#genericonsregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -95,14 +95,24 @@ ul, li {
   list-style-type: none;
 }
 
+strong {
+    font-family: robotoregular;
+}
+
 /*BOOTSTRAP*/
 .navbar-default {
   background-color: #fff;
   border-color: #fff;
   /*opacity: 0.8;*/
 }
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a.doacoes-menu {
+    background-color: #066a9c;
+    color: #fff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > .doacoes-menu {
   background-color: #eb681b;
   color: #fff;
 }
@@ -138,14 +148,26 @@ ul, li {
   margin-top: 13px;
 }
 
+.carousel-inner {
+  margin-top: 8px;
+}
+
 /*NOVOS*/
 .fundo {
   background-color: #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .dfundo {
   background: url('../img/dfundo.png') no-repeat;
   background-size: 100% 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.dfundo .panel {
+    margin-bottom: 0;
 }
 
 .agenda {
@@ -155,6 +177,7 @@ ul, li {
 .agenda h3 {
   font-family: robotoregular;
   color: #fff;
+  margin-top: 0;
 }
 
 .anota {
@@ -166,12 +189,14 @@ ul, li {
 }
 
 .title {
+  display: inline-block;
   border-right: solid 15px #eb681b;
+  padding-right: 10px;
 }
 
 .secao {
     margin-top: -50px;
-    padding: 50px ;
+    padding-top: 50px ;
 }
 
 .margem {
@@ -188,17 +213,17 @@ ul, li {
 
 .bdestaque {
     position: absolute;
-    margin-top: -100px;
-    margin-left: 210px;
-    background: rgba(229, 106, 38, 0.9);
-    width: 150px;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(229, 106, 38, 0.7);
+    width: 200px;
     height: 100px;
     color: #fff;
     padding: 10px;
 }
 
 .bdestaque h4 {
-    font-family: robotomedium;
+    font-family: robotoregular;
     font-size: 18px;
 }
 
@@ -207,7 +232,7 @@ ul, li {
   font-size: 12px;
 }
 
-.destaque {
+/*.destaque {
     position: absolute;
     margin-top: -350px;
     margin-left: 670px;
@@ -223,7 +248,7 @@ ul, li {
 .destaque h2 {
   font-family: robotomedium;
   font-size: 55px;
-}
+}*/
 
 .rodape {
   background-color: #eb681b;
@@ -238,8 +263,12 @@ ul, li {
   color: #fff;
   font-family: robotoregular;
   text-align: center;
-  height: 50px;
+  /*height: 60px;*/
   padding: 15px;
+}
+
+.newsletter {
+    padding-bottom: 30px;
 }
 
 .contato p, .contato a, .social p, .social a, .newsletter p {
@@ -257,4 +286,121 @@ ul, li {
 
 .genericon-instagram {
   font-size: 18px;
+}
+
+
+/* Teste */
+
+.destaque-principal {
+    background: url(../img/grupo.jpg) no-repeat top center;
+    background-size: cover;
+    /*margin-top: 66px;*/
+    overflow: hidden;
+    height: 100vh;
+}
+.destaque-principal div {
+    margin-top: 70vh;
+    /*margin-bottom: 10vh;*/
+}
+.destaque-principal h1 {
+  font-family: robotomedium;
+  color: #eb681b;
+  font-size: 10vw;
+}
+.destaque-principal h2 {
+  font-family: robotomedium;
+  font-size: 5vw;
+}
+
+/* Small devices (celulares) */
+@media (max-width: 768px) {
+    .destaque-principal h1 {
+        font-size: 10vw;
+    }
+    .destaque-principal h2 {
+        font-size: 5vw;
+    }
+    .foto {
+        margin-bottom: 15px;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .destaque-principal h1 {
+        font-size: 10vw;
+    }
+    .destaque-principal h2 {
+        font-size: 5vw;
+    }
+    .foto {
+        margin-bottom: 15px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .destaque-principal h1 {
+        font-size: 8vw;
+    }
+    .destaque-principal h2 {
+        font-size: 4vw;
+    }
+    .foto {
+        margin-bottom: 30px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .destaque-principal h1 {
+        font-size: 5vw;
+    }
+    .destaque-principal h2 {
+        font-size: 2.5vw;
+    }
+    .foto {
+        margin-bottom: 30px;
+    }
+}
+
+.postagem {
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    background-size: cover;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.blog-destaque-principal {
+    background: url(../img/grupo.jpg) no-repeat top center;
+    background-size: cover;
+    /*margin-top: 66px;*/
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.blog-destaque-principal .container {
+    position: relative;
+    height: 50vh;
+}
+.blog-destaque-principal h1 {
+  font-family: robotomedium;
+  color: #eb681b;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  /*font-size: 10vw;*/
+}
+.categorias-destaque {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.categorias-destaque li {
+    display: inline-block;
+}
+.categorias-destaque li a {
+    color: #eb681b;
+    display: block;
+    padding: 5px 15px;
 }
