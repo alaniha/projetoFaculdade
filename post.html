@@ -16,7 +16,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/html5lightbox.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#bs-example-navbar-collapse-1">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -35,54 +35,82 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#sobreNos">Sobre Nós</a>
+                        <a href="index.html#sobreNos">Sobre Nós</a>
                     </li>
                     <li>
-                        <a href="#nossasAcoes">Nossas Ações</a>
-                    </li>
-                    <li class="active">
-                        <a href="#doacoes">Doações</a>
+                        <a href="index.html#nossasAcoes">Nossas Ações</a>
                     </li>
                     <li>
-                        <a href="#blog">Blog</a>
+                        <a href="index.html#doacoes" class="doacoes-menu">Doações</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
-      
+    <div class="post-destaque-principal">
+        <div class="container">
+        </div>
     </div>
-    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 post">
+              <h1>Zika Zero</h1>
+              <h5>Publicado no dia 9 de abril de 2016</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at ipsum neque. Aenean varius purus vel sem malesuada blandit. Nullam mollis mauris non nunc pellentesque molestie. Proin semper, neque bibendum fermentum sollicitudin, ante sem lacinia augue, quis auctor mi tellus porttitor ligula. Praesent et dui et risus sollicitudin viverra. Donec at nunc eros. Vivamus blandit vestibulum tellus id viverra. Praesent sit amet lacus quis justo elementum faucibus nec at turpis. Aenean quis lacus ut est porta pretium et at ante. Cras tellus diam, bibendum facilisis augue ut, vehicula blandit purus.</p>
+              <p>Vivamus bibendum suscipit accumsan. Praesent sed nisl libero. Fusce malesuada, massa sed blandit mollis, est lectus pharetra ante, iaculis efficitur lectus lectus et lorem. Fusce ut ullamcorper ex. Nunc nec venenatis dui. Praesent interdum sodales dolor. Curabitur est mi, volutpat sed tristique id, interdum nec nisl. Nunc ac lectus ut diam pretium auctor. Morbi lectus sapien, scelerisque sit amet dictum in, dignissim eget metus. Curabitur vel maximus ante, at scelerisque augue. Suspendisse tempus sit amet metus non venenatis.</p>
+              <p>Etiam molestie vel metus sed laoreet. Nunc pulvinar ex sed ex rhoncus, et bibendum velit rhoncus. Aenean sit amet nulla pharetra, venenatis felis a, aliquet augue. Aenean venenatis felis eros, quis mattis nunc porta ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc mattis urna et blandit varius. Duis sagittis, risus quis rhoncus ultricies, urna arcu accumsan leo, a imperdiet erat tortor et metus. Integer accumsan nibh porta, vestibulum magna a, laoreet dolor. Nam scelerisque orci id nisi tristique, eu consequat lorem porttitor. Vivamus fringilla semper ante ut commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec a tincidunt nulla, at mattis nunc. Praesent vulputate, ante a vestibulum pharetra, magna orci faucibus odio, sit amet cursus massa metus sit amet magna. Vestibulum et faucibus lectus, ac consequat velit. Pellentesque finibus, neque venenatis eleifend molestie, libero nisl ultricies nulla, porttitor tincidunt diam felis id purus.</p>
+                <hr>
+                <div id="share-post">
+                  <a class="facebookS" href="https://www.facebook.com/sharer/sharer.php?u=#" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="Compartilhar no Facebook">
+                    <div class="genericon genericon-facebook-alt"></div>
+                  </a>
+                  <a class="twitterS" href="https://twitter.com/intent/tweet?url=#" target="_blank" title="Compartilhar no Twitter">
+                    <div class="genericon genericon-twitter"></div>
+                  </a>
+                  <a class="googleS" href="https://plus.google.com/share?url=#" onclick="javascript:window.open(this.href,   &quot;&quot;, &quot;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&quot;);return false;" rel="nofollow" title="Compartilhar no Google+">
+                    <div class="genericon genericon-googleplus"></div>
+                  </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+      <footer>
         <div class="rodape">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                   <h3>Contatos</h3>
                   <div class="row">
-                    <div class="col-lg-6 contato">
+                    <div class="col-lg-6 col-md-6 contato">
                       <p><span class="genericon genericon-tablet"></span><a href="callto:21974415610">21 9 7441-5610</a><br>Robert - Organizador</p>
                       <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:ongacaocosplay@gmail.com">ongacaocosplay@gmail.com</a></p>
                     </div>
-                    <div class="col-lg-6 social">
+                    <div class="col-lg-6 col-md-6 social">
                       <p><span alt="Ícone do Facebook" class="genericon genericon-facebook-alt"></span>&nbsp;<a href="#">/AcaoCosplayOficial</a></p>
                       <p><span alt="Ícone do Twitter" class="genericon genericon-twitter"></span>&nbsp;<a href="#">@aCosplayOficial</a></p>
                       <p><span alt="Ícone do Instagram" class="genericon genericon-instagram"></span>&nbsp;<a href="#">@aCosplayOficial</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 newsletter">
+                <div class="col-lg-6 col-md-6 newsletter">
                   <h3>Newsletter</h3>
                   <p>Faça parte da nossa lista de emails e nunca perca uma atualização!</p>
                   <form>
                     <div class="row">
-                      <div class="col-lg-9">
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <div class="col-lg-3">
-                        <button type="submit" class="btn btn-primary">Assine Já</button>
+                      <div class="col-lg-10 col-md-10">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="batman@ligadajustica.com">
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary" type="button">Assinar</button>
+                        </span>
+                        </div>
                       </div>
                     </div>
                   </form>
@@ -92,9 +120,9 @@
           </div>
         </div>
         <div class="col-lg-12 info">
-         <p>Copyright © 2016  Ação Cosplay  |  Tema desenvolvido por Alana Carvalho.</p>
+         Copyright © 2016  Ação Cosplay  |  Tema desenvolvido por Alana Carvalho.
         </div>
-        
+
       </div>
       </footer>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
