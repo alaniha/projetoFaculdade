@@ -156,6 +156,10 @@ a, a:hover, a:focus, a:active {
   margin-top: 8px;
 }
 
+.pager li>a, .pager li>span {
+    border-radius: 4px;
+}
+
 /*NOVOS*/
 .fundo {
   background-color: #f0f0f0;
@@ -228,7 +232,7 @@ a, a:hover, a:focus, a:active {
 
 .bdestaque h4 {
     font-family: robotoregular;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bdestaque p {
@@ -408,12 +412,14 @@ a, a:hover, a:focus, a:active {
     background: url(../img/blog1.jpg) no-repeat top center;
     background-size: cover;
     /*margin-top: 66px;*/
-    height: 500px;
+    /*height: 500px;*/
     overflow: hidden;
+    position: relative;
     margin-bottom: 30px;
 }
 .blog-destaque-principal .container {
     position: relative;
+    min-height: 300px;
     height: 50vh;
 }
 .blog-destaque-principal h1 {
@@ -421,8 +427,9 @@ a, a:hover, a:focus, a:active {
   font-size: 60px;
   color: #fff;
   position: absolute;
-  bottom: -80px;
+  bottom: 30px;
   left: 30px;
+  text-shadow: #666 1px 1px 1px;
   /*font-size: 10vw;*/
 }
 
@@ -431,19 +438,19 @@ a, a:hover, a:focus, a:active {
   font-size: 30px;
   color: #fff;
   position: absolute;
-  bottom: -25px;
+  bottom: 90px;
   left: 30px;
+  text-shadow: #666 1px 1px 1px;
   /*font-size: 10vw;*/
 }
 
 .categorias-destaque {
-    background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
     margin: 0;
-    padding: 0 15px;
+    padding: 0;
     margin-bottom: 30px;
-    font-family: robotolight;
-    font-size: 18px;
-    border-radius: 4px;
+    font-family: robotothin;
+    font-size: 14px;
     /*text-transform: uppercase;*/
     /*border: 1px solid #ddd;
     border-radius: 15px;*/
@@ -451,6 +458,8 @@ a, a:hover, a:focus, a:active {
 }
 .categorias-destaque li {
     display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
 .categorias-destaque li a {
     color: #066a9c;
